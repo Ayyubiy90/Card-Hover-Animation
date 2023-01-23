@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #010101;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background-image: url("1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-body {
+  background-color: #eee;
+  padding: 15px;
+  color: #222;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  transition: all 0.3s;
+  border-top-left-radius: 15px;
+}
+
+.card-title {
+  text-transform: capitalize;
+}
+
+.card-desc {
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.card:hover .card-body {
+  transform: translateY(0);
+}
